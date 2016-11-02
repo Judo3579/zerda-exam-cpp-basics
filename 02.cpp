@@ -19,9 +19,22 @@ using namespace std;
  *   10 * 5 = 50
  */
 
+int multiplication(int number, int range) {
+  for (int i = 1; i <= range; ++i) {
+    cout << number << " * " << i << " = " << number * i << endl;
+    }
+    return 0;
+}
+
 
 int main() {
-
+  int number;
+  int range;
+  cout << "Enter an integer:" << endl;
+  cin >> number;
+  cout << "Enter range:" << endl;
+  cin >> range;
+  multiplication(number, range);
   return 0;
 }
 

@@ -9,9 +9,14 @@ using namespace std;
  * Please mutliply the total variable by 5 with it.
  */
 
+float multiplyValue(float* number, float a) {
+  *number = number * a;
+  return 0;
+}
+
 int main() {
   float total = 123;
-
+  cout << multiplyValue(&total);
   return 0;
 }
 
